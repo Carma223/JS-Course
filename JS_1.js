@@ -206,6 +206,44 @@ const lastLetter = firstName4[firstName4.length - 1];
 const firstName5 = "Margaret Trejo";
 const thirdToLastLetter = firstName5[firstName5.lenght - 3];
 
+//Word blanks
+const sentence = "It was really " + "hot" + ", and we " + "laughed" + " ourselves " + "silly" + ".";
+
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Only change code below this line
+const wordBlanks = "The " + myAdjective + " "+ myNoun + " " + myVerb + " " + myAdverb + "." // Change this line
+// Only change code above this line
+
+//Store Multiple Values in one Variable using JavaScript Arrays
+
+const sandwich = ["peanut butter", "jelly", "bread"];
+
+// Only change code below this line
+const myArray = ["league of legends" , 22];
+
+//Nest one Array within Another Array
+//You can also nest arrays within other arrays
+const teams = [["Bulls" , 23], ["White Sox", 45]]; //Also called multi-dimensional array
+
+//Access Array Data with Indexes
+//Array indexes are written in the same bracket notation that strings use, they specify
+//an entry in the arrey, they also use zero-based indexing
+const arrayIndexes = [50, 60, 70];
+console.log(array[0]);//prints 50
+const data = array[1];//prints 60
+
+//Modify Array Data With Indexes
+//Unlike strings, the entries of arrays are mutable and can be changed freely,
+//even if the array was declared with const
+
+const ourArray = [50, 40, 30];
+ourArray[0] = 15;
+
+
 
 
 
