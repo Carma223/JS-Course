@@ -243,6 +243,25 @@ const data = array[1];//prints 60
 const ourArray = [50, 40, 30];
 ourArray[0] = 15;
 
+//Access Multi-Dimensional Arrays With Indexes
+
+const arr = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12],13,14]];
+
+const subarray = arr[3];
+const nestedSubArray = arr[3][0];
+const element = arr[3][0][1];
+
+//in this example, subarray has the value [[10,11,12],13,14], nestedSubarray
+//has the value [10,11,12], and elemet has the value 11.
+
+//Manipulate arrays with push Method
+
+const arrPush = [1,2,3];
+arr1.push(4);
+
+const arrPush2 = ["Simpson", "J", "cat"];
+arrPush2.push(["happy", "joy"]);
+//arrPush no has te value [1,2,3,4] and arrPush2 has the value [Simpson,J,cat,[happy,joy]]. 
 
 
 
