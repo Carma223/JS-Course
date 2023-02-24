@@ -254,14 +254,100 @@ const element = arr[3][0][1];
 //in this example, subarray has the value [[10,11,12],13,14], nestedSubarray
 //has the value [10,11,12], and elemet has the value 11.
 
-//Manipulate arrays with push Method
+//Manipulate arrays with push Method\\
 
 const arrPush = [1,2,3];
 arr1.push(4);
 
 const arrPush2 = ["Simpson", "J", "cat"];
 arrPush2.push(["happy", "joy"]);
-//arrPush no has te value [1,2,3,4] and arrPush2 has the value [Simpson,J,cat,[happy,joy]]. 
+//arrPush now has te value [1,2,3,4] and arrPush2 has the value [Simpson,J,cat,[happy,joy]]. 
+
+//Manipulate arrays with pop method\\
+
+//.pop() removes the last element of an array and returns that element, wich means that can be stored 
+const threeArr  = [1,4,6];
+const oneDown = threeArr.pop();
+console.log(oneDown);
+console.log(threeArr);
+
+//Manipulate arrays with shift method\\
+
+//it does the same as .pop() with the difference that it removes the first element 
+const ourArray = ["Stimpon", "J", ["Cat"]];
+const removedFromOurArray = ourArray.shift();
+console.log(removedFromOurArray);
+console.log(ourArray);
+
+//Manipulate arrays with unshift methods\\
+
+//It works similar to push but insted of adding an alement at the end of an array it adds it at the beginning 
+const ourAnotherArray = ["Stimpson", "J", "Cat"];
+ourAnotherArray.shift();
+console.log(ourAnotherArray);
+ourAnotherArray.reverse("First element");
+console.log(ourAnotherArray);
+
+//Shopping list\\
+
+//Crate a multidimensional array wich contains the name of an item and its price
+const shoppingList = [["Soap", 3], ["Reeses", 1], ["Gatorade", 2], ["Mirror", 5], ["Bread", 1]];
+
+//Write reusable JavaScript with functions\\
+
+//In js we can divide our code into reusable parts called functions 
+function functionName() {
+    console.log("Hello world!");
+}
+//You can call or invoke this function by using its name followed by parentheses
+functionName();
+
+//Passing values to Functions with arguments\\
+
+//Parameters are variables that act as placeholders for the values that are to be input to a function when its called
+//The actual values that are input (or "passed") into a function when its called are known as arguments 
+function testFun( param1, param2 ){
+    console.log( param1, param2 );
+}
+
+testFun("I wanna play", " some league bro");
+
+//Return a value from a function with return\\
+
+//you can use return statement to send a value back out of a function
+function plusThree(num){
+    return num + 3;
+}
+
+const answer =  plusThree(6);
+
+//Global Scope and Functions\\
+
+//In JavaScript scope refers to the visibilty of variables, the ones that are defined otside a function block has a Global scope
+//Variables wich are created without the let or const keyword are automatically created in the Global scope
+//this can create unintended consequences elsewhere in the code 
+
+// Declare the myGlobal variable below this line
+let myGlobal = 10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal here
+  oopsGlobal = 5; //doesn't use let or const so is Global automatically 
+}
+
+// Only change code above this line 
+
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+
 
 
 
