@@ -965,6 +965,26 @@ switch( card ){
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
 
+//Build JavaScript Objects\\
+//Objects are similar to arrays, except that instead of using indexes to access and modify their data
+//you can acces the data in objects through what are called properties. Objects are useful to store data
+//in a structured way, and can represent real world objects, like a cat.
+
+const cat = {
+  "name": "Whiskers",
+  "legs": 4,
+  "tails": 1,
+  "enemies": ["Water", "Dogs"]
+};
+
+//In this example, all the properties are stored as strings, such as name, legs, and tails. However, you can
+//also use nombres as properties. You can even omite the quotes for single-word string properties.
+const anotherObject = {
+  make: "Ford",
+  5: "Five",
+  "model": "focus"
+};
+
 
 
 
