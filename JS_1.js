@@ -985,6 +985,71 @@ const anotherObject = {
   "model": "focus"
 };
 
+//Accessing Object Properties with Dot Notation\\
+//There are two ways to access the properties of an object: dot notation(.) and bracket notation([]), similar to an array.
+//Dot notation is what you use when you know the name of the property you're trying to access ahead of time
+
+const myObj = {
+  prop1: "val1",
+  prop2: "val2"
+};
+
+const prop1val = myObj.prop1;
+const prop2val = myObj.prop2;
+
+//Accessing Object Properties with Bracket Notation\\
+//The second way to access the properties of an object is bracket notation. If the property you're trying to access has a 
+//space in its name, you will need to use bracket notation. However, you can still use a bracket notation on object prop
+//without spaces.
+
+const myObject = {
+  "Space Name": "Kirk",
+  "More Space": "Spock",
+  "NoSpace": "USS Enterprise"
+};
+
+const objName = myObject["Sapce Name"];
+const objName2 = myObject["More Space"];
+const objName3 = myObject["NoSpace"];
+
+//Properties with spaces in them must be in quotes (single or double).
+
+//Accessing Object Properties with Variables\\
+//Another use of bracket notation on objects is to acces a property which is stored as the value of a variable.
+//This can be very useful for iterating through an object's properties or when accessing a lookup table.
+
+const dogs = {
+  Fido: "Mutt",
+  Hunter: "Doberman",
+  Snoopie: "Beagle"
+};
+
+const myDog = "Hunter";
+const myBreed = dogs[myDog];
+console.log(myBreed);
+
+//Updating object properties\\
+//You can update object properties anytime just like you would with any other variable
+//you can use either bracket or dot notation.
+
+const ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+ourDog.name = "Happy Camper";
+ourDog["name"] = "Happy Camper";
+
+//Add New Properties to a JavaScript Object\\
+//You can add new properties to existing objects the same way you would modify them
+ourDog.bark = "bow-bow";
+ourDog["eat"] = "chom-chom";
+
+//Delete Properties from a JavaScript Object\\
+
+
 
 
 
